@@ -1,0 +1,746 @@
+/* General */
+html, body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+html {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+body {
+  background-color: hsl(60, 50%, 98%);
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* Sign In */
+.sign-in {
+  position: fixed;
+  top: -100%;
+  z-index: 1000000;
+  width: 100%;
+}
+
+.sign-in-box {
+  width: 95%;
+  padding: 3rem 0;
+  text-align: center;
+  background-color: #F1FFFF;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  position: relative;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+.sign-in-box .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  padding: 0.25rem;
+  color: hsl(0, 0%, 80%);
+  transition: color 100ms linear;
+}
+
+.sign-in-box .close:hover {
+  color: hsl(0, 0%, 10%);
+  cursor: pointer;
+}
+
+.colmar-logo {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 0.5rem;
+}
+
+.sign-in-box .sign-in-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 45%);
+}
+
+.sign-in-box input {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: 2rem;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  outline: none;
+}
+
+.sign-in-box input:nth-child(1n + 0) {
+  margin-bottom: 0.5rem;
+}
+
+.sign-in-box input:focus {
+  box-shadow: 0px 0px 4px hsla(0, 0%, 50%, 0.5);
+}
+
+.sign-in-box .sign-in-button {
+  width: 73%;
+  margin: 0 auto;
+  background-color: hsl(185, 50%, 45%);
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-bottom: 2px solid hsl(180, 50%, 30%);
+  color: white;
+  margin-top: 1rem;
+  transition: background-color 100ms linear;
+}
+
+.sign-in-button:hover {
+  cursor: pointer;
+  background-color: hsl(185, 50%, 42%);
+}
+
+/* Application */
+
+.application-container {
+  height: 0%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  top: -100%;
+  position: fixed;
+  z-index: 5000000;
+}
+
+.application {
+  position: absolute;
+  z-index: 400000;
+  height: 95%;
+  width: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: scroll;
+  background-color: #F1FFFF;
+  border: 2px solid #92D1C8;
+  border-radius: 10px;
+}
+
+.application .colmar-logo {
+  text-align: center;
+  padding-top: 1rem;
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+.fill, .tell-us {
+  padding-bottom: 1rem;
+}
+
+.application textarea {
+  width: 90%;
+  max-width: 95%;
+  height: 10rem;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+.application form {
+  padding: 1rem;
+  text-align: center;
+}
+
+.application input {
+  width: 90%;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 75%);
+}
+
+.application input:focus {
+  box-shadow: 0px 0px 4px hsla(0, 0%, 50%, 0.5);
+}
+
+.application span {
+  color: red;
+}
+
+.clear {
+  color: #F1FFFF !important;
+}
+
+.name-information, .address-information, .contact-information {
+  margin-bottom: 1rem;
+}
+
+.close-container {
+  position: absolute;
+  height: 3rem;
+  width: 100%;
+  top: 0;
+}
+
+.application #close {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0;
+  color: hsl(0, 0%, 80%);
+  transition: color 100ms linear;
+}
+
+.application #close {
+  color: hsl(0, 0%, 80%);
+  transition: color 100ms linear;
+}
+
+.application #close:hover {
+  color: hsl(0, 0%, 10%);
+  cursor: pointer;
+}
+
+.application input[type='submit'] {
+  margin: 1rem 0;
+  background-color: hsl(185, 50%, 45%);
+  border-radius: 5px;
+  border-bottom: 2px solid hsl(180, 50%, 30%);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0.5rem;
+  transition: background-color 100ms linear;
+}
+
+.application input[type='submit']:hover {
+  cursor: pointer;
+  background-color: hsl(185, 50%, 42%);
+}
+
+.required-denotes {
+  color: red;
+}
+
+.tell-us {
+  line-height: 1.5;
+}
+
+/* Navigation */
+.main-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, hsl(0, 0%, 98%), #CFF5EE);
+  border-bottom: 1px solid #92D1C8;
+  border-top: 1px solid #92D1C8;
+}
+
+.logo-container {
+  display: inline-block;
+  font-size: 1.75rem;
+  /* font-weight: 600; */
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+}
+
+.colmar {
+  color: #034F50 !important;
+}
+
+.tech {
+  margin-left: -.5rem;
+  color: #50A5A6 !important;
+}
+
+.desktop-links {
+  display: none;
+}
+
+nav {
+  font-family: "Roboto Slab", serif;
+  width: 100%;
+  position: fixed;
+  background-color: hsl(0, 0%, 98%);
+  z-index: 50000;
+}
+
+#menu-button {
+  margin-right: 1rem;
+  color: #034F50;
+}
+
+#menu-button:hover {
+  cursor: pointer;
+}
+
+#mobile-links {
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+}
+
+#mobile-links a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem;
+  background-image: linear-gradient(to bottom right, hsl(0, 0%, 98%), #CFF5EE);
+  color: #034F50;
+}
+
+/* Header */
+.landing {
+  height: 25rem;
+  background-color: #034F50;
+  border-bottom: 1px solid #92D1C8;
+  overflow: hidden;
+}
+
+.landing-container {
+  height: 100%;
+  width: 400%;
+  display: inline-flex;
+  position: relative;
+  left: 0;
+}
+
+.landing-image {
+  height: 100%;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0.01px;
+  display: inline-block;
+  position: absolute;
+}
+
+.campus {
+  background-image: url('../images/campus.jpg');
+  background-position: center;
+}
+
+.graduate {
+  background-image: url('../images/graduate.jpg');
+}
+
+.collaborate {
+  background-image: url('../images/collaborate.jpg');
+}
+
+.students {
+  background-image: url('../images/studentscampus.jpg');
+}
+
+.messages {
+  position: absolute;
+  bottom: 0;
+  background-color: #CFF5EE;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  padding: 1rem 0;
+}
+
+/* Pages */
+/* Welcome Page */
+.welcome-page h3 {
+  text-align: center;
+  font-size: 2.25rem;
+  padding: 2rem 0.5rem 1rem 0.5rem;
+}
+
+.colmar-info {
+  padding: 1rem;
+  line-height: 1.25;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.testimonials-link {
+  padding: 0.5rem;
+  text-align: center;
+  display: block;
+  width: 75%;
+  margin: 0 auto 1rem auto;
+  background-color: hsl(0, 0%, 98%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 98%), #CFF5EE);
+  border: 1px solid #50A5A6;
+  border-bottom: 2px solid hsl(180, 100%, 25%);
+  border-radius: 5px;
+  color: #034F50;
+  font-size: 0.75rem;
+}
+
+.testimonials-link:hover {
+  cursor: pointer;
+}
+
+/* Testimonials */
+.testimonials-section {
+  box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .3);
+  background-color: #50A5A6;
+  overflow: scroll;
+  height: 0;
+  z-index: 100;
+}
+
+.testimonials-container {
+  display: flex;
+}
+
+.testimonial {
+  width: 12rem;
+  padding: 2rem;
+}
+
+.testimonial-image-container {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .5);
+  border: 2px solid hsl(180, 50%, 85%);
+}
+
+.testimonial-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.testimonial-quote {
+  font-size: 0.8rem;
+  padding: 1rem 0;
+  line-height: 1.4;
+  text-align: center;
+  font-style: italic;
+  color: hsl(0, 0%, 98%);
+}
+
+.testimonial-signature {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+  color: hsl(0, 0%, 98%);
+}
+
+.name {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fa-quote-left {
+  font-size: 2rem;
+}
+
+
+/* Academics */
+
+.academics-container h1 {
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.academics-info {
+  font-size: 1.25rem;
+  line-height: 1.25;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* courses */
+.highlight-courses {
+  padding: 1.5rem 0.5rem;
+}
+
+.courses-container {
+  text-align: center;
+  margin: 1rem 0;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .15);
+}
+
+.course-image-container {
+  height: 9rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.course-image-container img {
+  width: 100%;
+}
+
+.courses {
+  padding: 1rem;
+  color: #034F50;
+  line-height: 1.25;
+}
+
+.majors-minors {
+  padding: 0 0.5rem;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  height: 6rem;
+  position: relative;
+}
+
+.column-container li {
+  padding: 0.25rem;
+}
+
+.gradient-space {
+  height: 2rem;
+  width: 100%;
+  z-index: 100;
+  background-image: linear-gradient(hsla(60, 50%, 98%, 0.5), hsla(60, 50%, 98%, 1));
+  box-shadow: 0px -2px 20px hsla(60, 50%, 98%, 0.5);
+  position: absolute;
+  bottom: 0px;
+}
+
+.minor-only {
+  font-size: 0.85rem;
+  padding: 1rem;
+}
+
+.show-all {
+  margin: 0 auto;
+  text-align: center;
+  width: 4rem;
+  padding: 0.5rem 1rem;
+  background-color: hsl(0, 0%, 98%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 98%), #CFF5EE);
+  border: 1px solid #50A5A6;
+  border-radius: 5px;
+  color: #034F50;
+  border-bottom: 2px solid hsl(180, 100%, 25%);
+  font-size: 0.75rem;
+}
+
+.show-all:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 98%), #CFF5EE);
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #034F50;
+  border-bottom: 1px solid #034F50;
+}
+
+.footer-logo {
+  letter-spacing: 1px;
+}
+
+.city-state {
+  margin: 0.5rem 0;
+}
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 400px) {
+  .course-image-container {
+    height: 12rem;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  .messages {
+    font-size: 1.25rem;
+  }
+
+  .welcome-page h3 {
+    font-size: 2.5rem;
+  }
+
+  .colmar-info {
+    padding: 1rem 2rem;
+  }
+
+  .academics-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .academics-info {
+    padding: 0 3rem;
+  }
+
+  .highlight-courses {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .course-image-container {
+    height: 15rem;
+  }
+
+  .majors-minors {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .column-container {
+    width: 100%;
+    display: flex;
+    padding-bottom: 1rem;
+  }
+
+  .col-1, .col-2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .testimonial {
+    padding: 2rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 670px) {
+  .welcome-page h3 {
+    font-size: 3rem;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .colmar-info {
+    padding: 1rem 4rem;
+  }
+
+  .testimonials-container {
+    justify-content: center;
+  }
+
+  .academics-container h1 {
+    font-size: 3rem;
+  }
+
+  .academics-info {
+    padding: 0rem 4rem;
+  }
+
+  .highlight-courses {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .landing {
+    height: 30rem;
+  }
+
+  .messages {
+    width: 50%;
+    right: 10%;
+    bottom: 10%;
+  }
+
+  .testimonials-link {
+    display: none;
+  }
+
+  .testimonials-section {
+    height: 100%;
+  }
+
+  .testimonial {
+    padding: 2rem;
+  }
+
+  .highlight-courses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
+
+  .courses-container {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .sign-in-box {
+    width: 60%;
+  }
+
+  .application {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .welcome-page h3 {
+    padding: 3rem 5rem 2rem 5rem;
+  }
+
+  .colmar-info {
+    padding: 1rem 10rem 3rem 10rem;
+  }
+
+  .academics-container h1 {
+    padding: 3rem;
+  }
+
+  .academics-info {
+    padding: 0 11rem;
+  }
+
+  .highlight-courses {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .highlight-courses {
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Colors */
+/* 034F50 darkest*/
+/* 50A5A6 */
+/* 92D1C8 */
+/* CFF5EE */
+/* F1FFFF lightest*/

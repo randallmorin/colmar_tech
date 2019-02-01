@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Colmar Tech</title>
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600|Noto+Sans+SC:300,400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <!-- Sign In -->
+    <div class="sign-in">
+      <div class="sign-in-box">
+        <p class="close">&times;</p>
+        <div class="colmar-logo">
+          <span class="colmar">COLMAR</span>
+          <span class="tech">TECH</span>
+        </div>
+        <p class="sign-in-text">Sign in to your Student Portal</p>
+        <input type="text" name="username" placeholder="Username" autocomplete="off">
+        <input type="password" name="password" placeholder="Password" autocomplete="off">
+        <div class="sign-in-button">
+          Sign In
+        </div>
+      </div>
+    </div>
+
+    <!-- Application -->
+    <div class="application-container">
+      <div class="application">
+        <p id="close" class="close">&times;</p>
+        <div class="colmar-logo">
+          <span class="colmar">COLMAR</span>
+          <span class="tech">TECH</span>
+        </div>
+        <form class="application-form">
+          <h1 class="fill">Fill out this form, and we'll send you more information!</h1>
+          <div class="name-information">
+            <div class="required-container">
+              <input type="text" name="fullname" placeholder="Full Name" autofocus><span>*</span>
+            </div>
+            <input type="text" name="preferredname" placeholder="Preferred Name"><span class="clear">*</span>
+            <input type="text" name="middleinitial" placeholder="Middle Initial"><span class="clear">*</span>
+            <div class="required-container">
+              <input type="text" name="lastname" placeholder="Last Name"><span>*</span>
+            </div>
+          </div>
+
+          <div class="address-information">
+            <div class="required-container">
+              <input type="text" name="streetaddress" placeholder="Street"><span>*</span>
+              <input type="text" name="cityaddress" placeholder="City"><span>*</span>
+              <input type="text" name="stateaddress" placeholder="State"><span>*</span>
+              <input type="text" name="zipaddress" placeholder="ZIP"><span>*</span>
+            </div>
+          </div>
+
+          <div class="contact-information">
+            <input type="text" name="phonenumber" placeholder="Phone"><span>*</span>
+            <input type="text" name="cellnumber" placeholder="Cell Phone"><span class="clear">*</span>
+            <input type="text" name="emailaddress" placeholder="Email"><span>*</span>
+          </div>
+
+          <h1 class="tell-us">Tell us about yourself, and why you're the perfect fit for Colmar Tech!<span>*</span></h1>
+          <textarea name="essay" placeholder="Enter text..."></textarea>
+
+          <input type="submit" name="Submit" value="Submit">
+
+          <p class='required-denotes'>* Required</p>
+        </form>
+      </div>
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <div class="main-nav-container">
+        <div class="logo-container">
+          <span class="colmar">COLMAR</span>
+          <span class="tech">TECH</span>
+        </div>
+
+        <i class="fas fa-bars" id="menu-button"></i>
+      </div>
+
+      <div id="mobile-links">
+        <a href="#academics" class="nav-link academics">Academics</a>
+        <a class="nav-link current-students">Current Students</a>
+        <a class="nav-link apply">Request Info</a>
+      </div>
+
+      <div class="desktop-links">
+        <a href="#" class="nav-link">Academics</a>
+        <a href="#" class="nav-link">Current Students</a>
+        <a href="#" class="nav-link">Request Info</a>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="landing">
+      <div class="landing-container">
+        <div class="landing-image collaborate">
+        </div>
+        <div class="landing-image students">
+        </div>
+        <div class="landing-image campus">
+          <p class="messages">
+            Welcome to Colmar Tech!
+          </p>
+        </div>
+        <div class="landing-image graduate">
+          <p class="messages">
+            Congrats, class of 2018!
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Container -->
+    <section class="content-container">
+      <!-- Welcome page -->
+      <div class="welcome-page">
+        <h3>The Colmar Tech Advantage</h3>
+        <p class="colmar-info">
+          At Colmar Tech, you will be encouraged to explore your passions and
+          enhance your strengths. As a small, technical college, we are able to
+          provide the tools necessary for success in the marketplace, and ensure
+          you are set up for success in your future endeavors.
+        </p>
+        <p class="testimonials-link">See why our students love Colmar Tech!</p>
+        <div class="testimonials-section collapsed">
+          <div class="testimonials-container">
+            <div class="testimonial">
+              <div class="testimonial-image-container">
+                <img src="./images/portraits/stacy.jpg" alt="student-portrait">
+              </div>
+              <p class="testimonial-quote">
+                "I loved my time at Colmar Tech! Professors were top-notch, and
+                made sure I was prepared for my career as a teacher."
+              </p>
+              <p class="testimonial-signature">
+                <span class="name">Stacy</span> <br> Education, class of 2016.
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image-container">
+                <img src="./images/portraits/ashly.jpg" alt="student-portrait">
+              </div>
+              <p class="testimonial-quote">
+                "Colmar Tech made sure I had every chance at becoming successful in
+                my career!"
+              </p>
+              <p class="testimonial-signature">
+                <span class="name">Ashly</span> <br> Software Engineering, class of 2012.
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-image-container">
+                <img src="./images/portraits/kyle.jpg" alt="student-portrait">
+              </div>
+              <p class="testimonial-quote">
+                "I received an outstanding, hands on education at Colmar Tech!"
+              </p>
+              <p class="testimonial-signature">
+                <span class="name">Kyle</span> <br> Physics, class of 2014.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academics -->
+      <div class="academics-container" id="academics">
+        <h1>Academics</h1>
+        <div class="academics">
+          <p class="academics-info">
+            We offer a multitude of courses to ensure that you will find your
+            calling, and are set up for success in your future. Our most popular
+            courses are below. Click 'Show More' to see all we have to offer.
+          </p>
+          <div class="highlight-courses">
+          <!-- Sciences -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/science.jpg" alt="Microscope">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  Physics, Biology, Chemistry, Astronomy
+                </p>
+              </div>
+            </div>
+
+            <!-- Computer Science -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/softwaredev.jpg" alt="Computer with code">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  iOS Development, Android Developement, Web Development
+                </p>
+              </div>
+            </div>
+
+            <!-- Engineering -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/engineering.jpg" alt="Plane turbine">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  Chemical Engineering, Mechanical Engineering, Civil Engineering
+                </p>
+              </div>
+            </div>
+
+            <!-- Design -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/webdesign.jpg" alt="Web design">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  Web Design, Marketing, Color Theory, Layout
+                </p>
+              </div>
+            </div>
+
+            <!-- Business -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/business.jpg" alt="Business majors">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  Marketing, Analytics, Investments
+                </p>
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div class="courses-container">
+              <div class="course-image-container">
+                <img src="./images/courses/education.jpg" alt="Classroom">
+              </div>
+              <div class="course-info-container">
+                <p class="courses">
+                  Behavorial Psychology, Development, Special Education
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="majors-minors collapsed">
+          <div class="column-container">
+            <div class="col-1">
+              <li class="course">Accounting</li>
+              <li class="course">Art History</li>
+              <li class="course">Astronomy*</li>
+              <li class="course">Biology</li>
+              <li class="course">Business</li>
+              <li class="course">Chemical Engineering</li>
+              <li class="course">Chemistry</li>
+              <li class="course">Classical Studies</li>
+              <li class="course">Computer Science</li>
+              <li class="course">Economics</li>
+              <li class="course">Education</li>
+              <li class="course">English</li>
+            </div>
+            <div class="col-2">
+              <li class="course">French</li>
+              <li class="course">Geology</li>
+              <li class="course">German</li>
+              <li class="course">Graphic Design</li>
+              <li class="course">History</li>
+              <li class="course">Journalism*</li>
+              <li class="course">Mathematics</li>
+              <li class="course">Nursing</li>
+              <li class="course">Physics</li>
+              <li class="course">Pre-Law</li>
+              <li class="course">Pre-Med</li>
+              <li class="course">Psychology</li>
+            </div>
+          </div>
+          <div class="gradient-space"></div>
+          <p class="minor-only">
+            * Available as a minor only.
+          </p>
+        </div>
+        <p class="show-all">
+          Show All
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="address-container">
+        <div class="footer-logo colmar-logo">
+          <span class="colmar">COLMAR</span>
+          <span class="tech">TECH</span>
+        </div>
+        <p class="street">123 Main Street</p>
+        <p class="city-state">Fredericksburg, VA 22407</p>
+        <p class="phone">540.555.5555</p>
+      </div>
+    </footer>
+
+    <script src="./js/jQuery_3.1.1"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
